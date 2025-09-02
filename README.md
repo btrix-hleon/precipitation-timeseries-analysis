@@ -1,10 +1,25 @@
-# precipitation-timeseries-analysis
+# Precipitation Timeseries Analysis
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/"> <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" /> </a> <img src="https://img.shields.io/badge/Python-3.8%2B-blue" /> <img src="https://img.shields.io/badge/Library-Pandas%20%7C%20Matplotlib%20%7C%20Statsmodels-orange" /> <img src="https://img.shields.io/badge/Analysis-Time%20Series-brightgreen" />
 </a>
 
-A timeseries analysis to monthly precipitation data of Santiago de Cuba, Cuba.
+A comprehensive time series analysis of monthly precipitation data for Santiago de Cuba, Cuba. This project provides statistical methods and visualization tools for hydrological data analysis.
+
+📊 Features
+
+    Trend Analysis: Mann-Kendall test for trend detection
+
+    Seasonality Analysis: Monthly patterns and visualizations
+
+    Stationarity Testing: Augmented Dickey-Fuller test
+
+    Homogeneity Analysis: SNHT test for change point detection
+
+    Non-linearity Testing: BDS test for nonlinear patterns
+
+    Autocorrelation Analysis: ACF plots and analysis
+
+    Periodicity Verification: Time interval consistency checks
 
 ## Project Organization
 
@@ -13,49 +28,19 @@ A timeseries analysis to monthly precipitation data of Santiago de Cuba, Cuba.
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── notebooks          <- Jupyter notebooks.
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         src and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
-├── setup.cfg          <- Configuration file for flake8
-│
 └── src   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes src a Python module
+    ├── __init__.py             <- Main analysis functions
     │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
+    └── timeseries-analysis.py  
 ```
 
 --------
-
