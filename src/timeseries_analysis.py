@@ -1,3 +1,25 @@
+"""
+Time Series Analysis Module
+
+This module provides comprehensive functions for analyzing time series data
+including trend analysis, seasonality, stationarity, periodicity, homogeneity,
+non-linearity, and autocorrelation.
+
+Features:
+- Trend analysis using Mann-Kendall test
+- Seasonality pattern visualization
+- Stationarity testing with Augmented Dickey-Fuller
+- Periodicity verification for time intervals
+- Homogeneity analysis with SNHT test
+- Non-linearity detection using BDS test
+- Autocorrelation function plotting
+- Results presentation in formatted tables
+
+Author: Beatriz Hernández León
+Date: 9-1-2025
+Version: 1.0
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
